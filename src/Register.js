@@ -23,7 +23,7 @@ const Register = ()=>
     
         e.preventDefault()
         console.log(data);
-        axios.post('http://localhost:5000/register', data)
+        axios.post('https://dev-hub-back-end.onrender.com/register', data)
         .then((response) => {
           console.log(response);
           // Handle success case

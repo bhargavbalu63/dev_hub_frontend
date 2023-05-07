@@ -1,26 +1,26 @@
-import {React, useState, useEffect,CSSProperties }from "react";
+import {React, useState, useEffect }from "react";
 import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
-import CircleLoader from "react-spinners/ClipLoader";
+// import ColorRing from "react-loader-spinner";
 import "./Dashboard.css"
-const override = {
+// const override = {
    
-    height:100,
-    margin: "auto",
-    borderColor: "blue",
-  };
+//     height:100,
+//     margin: "auto",
+//     borderColor: "blue",
+//   };
 const Dashboard=()=>
 {
-    const [loading, setLoading] = useState(false);
+    // const [loading, setLoading] = useState(false);
 const [data, setData]=useState([])
 useEffect(()=>
 {
-    setLoading(true)
+    // setLoading(true)
     setTimeout(()=>
 {
-    setLoading(false)
+    // setLoading(false)
 },1500)
-axios.get('http://localhost:5000/allprofiles', {
+axios.get('https://dev-hub-back-end.onrender.com/allprofiles', {
     headers:{
         'x-token':localStorage.getItem('token')
     }
@@ -39,13 +39,15 @@ if(!localStorage.getItem('token'))
 
         
         <div>
-        {loading ? <CircleLoader
+        {/* {loading ? <ColorRing
         color={"#00FFFF"}
         loading={loading}
         cssOverride={override}
-      /> : <div>
-
-
+      /> :  */}
+      
+      
+      
+      <div>
 
 <h1>devlopes Hub</h1>
  
@@ -71,7 +73,10 @@ return  <div key={index}>
 
 
 
-        </div>} 
+        </div>           
+        {/* } */}
+
+        
          
 
 

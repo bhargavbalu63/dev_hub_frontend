@@ -7,13 +7,13 @@ const Myprofile=()=>
     const [review, setReview]= useState([])
     useEffect(()=>
     {
-    axios.get('http://localhost:5000/myprofile', {
+    axios.get('https://dev-hub-back-end.onrender.com/myprofile', {
         headers:{
             'x-token':localStorage.getItem('token')
         }
     }).then(res=>setData(res.data))
 
-    axios.get('http://localhost:5000/myreview', {
+    axios.get('https://dev-hub-back-end.onrender.com/myreview', {
         headers:{
             'x-token':localStorage.getItem('token')
         }
