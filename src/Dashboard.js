@@ -2,7 +2,7 @@ import {React, useState, useEffect }from "react";
 import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
 // import ColorRing from "react-loader-spinner";
-import './dashboard.css'
+import './Dashboard.css'
 // const override = {
    
 //     height:100,
