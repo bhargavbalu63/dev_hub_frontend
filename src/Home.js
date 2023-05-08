@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Home.css'
+import photo from './Studio_Project_V0.png'
 const Home= ()=>
 {
 
@@ -12,26 +13,31 @@ const Home= ()=>
 
             <div>
            <h1>
-        <Link style={{"text-decoration":"none",}} to ="/"> Developers Hub</Link>
+        <Link style={{"textDecoration":"none",}} to ="/"> Developers Hub</Link>
         </h1>
         </div>
 
         <div id="links">
        
-                <Link style={{"margin-left":"50px","font-size":"25px"}} to="/register">Register</Link>
-            
+       <div className="link">
+       <Link  style={{"marginLeft":"5px","fontSize":"25px", "color": "white","textDecoration":"none"}} to="/register">Register</Link>
+       </div>
+             
+           <div className="link">
+           <Link  style={{"marginLeft":"5px","fontSize":"25px","color": "white", "textDecoration":"none"}} to="/login">Login</Link>
+                </div> 
            
-                <Link style={{"margin-left":"50px","font-size":"25px"}} to="/login">Login</Link>
+               
         
     
     
         </div>
 
             </div>     
-   <div id="main" style={{backgroundImage:`url(https://as1.ftcdn.net/v2/jpg/04/59/42/04/1000_F_459420402_PurnNZmFvoK2YwpQabAgicp8ukIW4Jgy.jpg)`, "height":"600px", "opacity":"1.5"}}>
+   <div id="main" style={{backgroundImage:`url(${photo})`, "height":"100vh", "opacity":"1.5", backgroundSize:'cover'}}>
 
-    <h2 style={{"text-shadow":"4px 4px 4px black"}}>{`<>`} Developers Hub{`</>`}</h2>
-   <p style={{"color":"white", "border":"8px solid black","border-style": "dashed", "text-shadow":"4px 4px 4px black"}}>Create a developer profile or portfolio, share posts and get help  from other developers</p>
+    <h2 style={{"textShadow":"4px 4px 4px black"}}>{`<>`} Developers Hub{`</>`}</h2>
+   <p style={{"color":"white", "border":"8px solid black","borderStyle": "dashed", "textShadow":"4px 4px 4px black"}}>Create a developer profile or portfolio and view all the existing developers</p>
    </div>
         
 

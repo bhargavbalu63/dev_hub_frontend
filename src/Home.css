@@ -11,14 +11,39 @@ li{
     padding: 0 40px;
     background-color:rgb(244, 238, 223);
 
+
+}
+
+.link
+{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(80, 82, 242);
+    border-radius: 20px;
+   /* border: 2px solid black; */
+    margin-right: 20px;
+    box-shadow: 1px 6px 15px rgb(38, 31, 12);
+   
+
 }
 #links
 {
-    text-align: center;
+    display: flex;
+ 
     margin-top: 28px;
 }
+
 #main
 {
     font-size: 60px;
     color: white;
+}
+h2{
+    margin-top: 0px;
+}
+p{
+    margin-top: 150px;
+}
+h2{
+    padding-top: 100px;
 }

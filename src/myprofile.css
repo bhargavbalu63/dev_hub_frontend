@@ -14,9 +14,9 @@ h1{
     font-size: 100px;
 }
 
-.dlink
+.plink
 {
-    width: 120px;
+    width: 220px;
     height: 40px;
     background-color: rgb(80, 82, 242);
     border-radius: 20px;
@@ -26,25 +26,27 @@ h1{
  padding-top: 10px;
 
 }
-#dlinks
+#plinks
 {
   margin-top: 50px;
-    margin-left: 570px;
+    margin-left: 470px;
     color: aliceblue;
     display: flex;
  
 
 }
 
-.dprofile
+.pprofile
 {
   
     border: 2px solid black;
     margin: 20px;
     border-radius: 20px;
     background-color: rgb(242, 193, 129);
+    width: 200px;
+    margin: 50px auto ;
 }
-#dcont
+#pcont
 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;

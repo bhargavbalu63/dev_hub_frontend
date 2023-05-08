@@ -2,7 +2,7 @@ import {React, useState, useEffect }from "react";
 import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
 // import ColorRing from "react-loader-spinner";
-import "./Dashboard.css"
+import './dashboard.css'
 // const override = {
    
 //     height:100,
@@ -49,21 +49,32 @@ if(!localStorage.getItem('token'))
       
       <div>
 
-<h1>devlopes Hub</h1>
+<h1 id="head">Welcome to Developers Hub</h1>
  
- <ul>
-   <li><Link to="/myprofile">my profile</Link></li>
-   <li><Link to="/login" onClick={()=>localStorage.removeItem('token',)}>Logout</Link></li>
- </ul>
+
+ <div id="dlinks">
+ <div className="dlink">
+    <li><Link  style={{"marginLeft":"5px","fontSize":"20px", "color": "white","textDecoration":"none"}} to="/myprofile">My profile</Link></li>
+    </div>
+    <div className="dlink">
+   <li><Link  style={{"marginLeft":"5px","fontSize":"20px", "color": "white","textDecoration":"none"}} to="/login" onClick={()=>localStorage.removeItem('token',)}>Logout</Link></li>
+   </div>
+    </div>
+  
+<div id="dcont">
+
+
 
 {data.length>=1? 
 
 data.map((profile, index)=>
 {
-return  <div key={index}>
-<h1>{profile.fullname}</h1>
+return  <div className="dprofile" key={index}>
+    
+<h1>{profile.fullname}</h1> 
 <p>{profile.email}</p>
 <p>{profile.mobile}</p>
+<p>{profile.skill}</p>
 
 </div>
 })
@@ -72,7 +83,7 @@ return  <div key={index}>
 :null}
 
 
-
+</div>
         </div>           
         {/* } */}
 

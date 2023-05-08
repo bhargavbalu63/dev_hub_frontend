@@ -2,9 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
-import './Home.css'
+import './register.css'
 const Register = ()=>
 {
+
+
+    // const[message, setMessage]= useState("")
+    const[success, setSuccess]= useState("")
     const [data, setData]= useState({
         fullname:'',
         email:'',
@@ -26,38 +30,61 @@ const Register = ()=>
         axios.post('https://dev-hub-back-end.onrender.com/register', data)
         .then((response) => {
           console.log(response);
+          setSuccess("Registered Successfully")
+         
           // Handle success case
         })
         .catch((error) => {
-          console.error(error);
+          console.log(error.response.data);
+
+          alert(error.response.data)
+        
+          
           // Handle error case
         });
         
         
     }
+
+
+
     return (
         <div>
             <div id="nav-bar">
 
 <div>
 <h1>
-<Link style={{"text-decoration":"none",}} to ="/"> Developers Hub</Link>
+<Link style={{"textDecoration":"none",}} to ="/"> Developers Hub</Link>
 </h1>
 </div>
 
 <div id="links">
 
-    <Link style={{"margin-left":"50px","font-size":"25px"}} to="/register">Register</Link>
-
-
-    <Link style={{"margin-left":"50px","font-size":"25px"}} to="/login">Login</Link>
-
+<div className="link">
+       <Link  style={{"marginLeft":"5px","fontSize":"25px", "color": "white","textDecoration":"none"}} to="/register">Register</Link>
+       </div>
+             
+           <div className="link">
+           <Link  style={{"marginLeft":"5px","fontSize":"25px","color": "white", "textDecoration":"none"}} to="/login">Login</Link>
+                </div> 
 
 
 </div>
 
 </div>  
-<h1>Sign up</h1>
+
+
+<div id="maincont">
+
+
+
+<h1 id="sign">Sign Up</h1>
+
+
+
+
+<div id="registercontainer">
+
 
 
 <p>Create your account</p>
@@ -66,14 +93,23 @@ const Register = ()=>
 <input required={true} type="email"  onChange={changeHandler} placeholder="Email address" name="email"/><br/>
 <input required={true} type="number"  onChange={changeHandler} placeholder="Mobile"  name="mobile"/><br/>
 <input required={true} type="text"  onChange={changeHandler} placeholder="Skill"  name="skill"/><br/>
-<input required={true} type="password"  onChange={changeHandler} placeholder="password" name="password"/><br/>
-<input required={true} type="password"  onChange={changeHandler} placeholder="confirem password"  name="confirmpassword"/><br/>
-<input required={true} type="submit"  value="Register"/>
+<input required={true} type="password"  onChange={changeHandler} placeholder="Password" name="password"/><br/>
+<input required={true} type="password"  onChange={changeHandler} placeholder="Confirm password"  name="confirmpassword"/><br/>
+<input className="button" required={true} type="submit"  value="Register"/>
 </form>
+{/* {message && <div>{message}</div>} */}
+{success && <div>{success}</div>}
+</div>
+
+
+
 <p>
-    Already have an account?
+
+
+    Already have an account? <br/>
     <Link to="/login">Sign in</Link>
     </p>
+    </div>
         </div>
     )
 }

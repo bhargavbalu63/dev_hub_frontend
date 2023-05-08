@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
+
+import './myprofile.css'
+
+
 const Myprofile=()=>
 {
     const [data, setData]=useState('')
@@ -29,17 +33,23 @@ const Myprofile=()=>
 
         
         <div>
-             <h1>devlopers Hub</h1>
-             <ul>
-             <li><Link to="/dashboard" >back to all profiles</Link></li>
-            <li><Link to="/login" onClick={()=>localStorage.removeItem('token',)}>Logout</Link></li>
-          </ul>
+             <h1 id="head">Developers Hub</h1>
+             <div id="plinks">
+             <div className="plink">
+             <li><Link style={{"marginLeft":"5px","fontSize":"20px", "color": "white","textDecoration":"none"}} to="/dashboard" >back to all profiles</Link></li>
+             </div>
+             <div className="plink">
+            <li><Link style={{"marginLeft":"5px","fontSize":"20px", "color": "white","textDecoration":"none"}} to="/login" onClick={()=>localStorage.removeItem('token',)}>Logout</Link></li>
+            </div>
+            </div>
 
+
+            <div className="pprofile">        
  <h1>{data.fullname}</h1>
 
          <p>{data.email}</p>
 
-
+</div>
 {review?
 
 review.map((review, index)=>
