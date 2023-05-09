@@ -38,7 +38,7 @@ if(!localStorage.getItem('token'))
     return(
 
         
-        <div>
+        <div className="App">
         {/* {loading ? <ColorRing
         color={"#00FFFF"}
         loading={loading}
@@ -49,7 +49,7 @@ if(!localStorage.getItem('token'))
       
       <div>
 
-<h1 id="head">Welcome to Developers Hub</h1>
+<h1 id="dhead">Welcome to Developers Hub</h1>
  
 
  <div id="dlinks">

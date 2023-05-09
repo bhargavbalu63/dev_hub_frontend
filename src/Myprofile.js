@@ -33,13 +33,13 @@ const Myprofile=()=>
 
         
         <div>
-             <h1 id="head">Developers Hub</h1>
+             <h1 id="phead">Developers Hub</h1>
              <div id="plinks">
              <div className="plink">
-             <li><Link style={{"marginLeft":"5px","fontSize":"20px", "color": "white","textDecoration":"none"}} to="/dashboard" >back to all profiles</Link></li>
+             <li><Link className="inlinelink" style={{"marginLeft":"5px", "color": "white","textDecoration":"none"}} to="/dashboard" >back to all profiles</Link></li>
              </div>
              <div className="plink">
-            <li><Link style={{"marginLeft":"5px","fontSize":"20px", "color": "white","textDecoration":"none"}} to="/login" onClick={()=>localStorage.removeItem('token',)}>Logout</Link></li>
+            <li><Link className="inlinelink" style={{"marginLeft":"5px", "color": "white","textDecoration":"none"}} to="/login" onClick={()=>localStorage.removeItem('token',)}>Logout</Link></li>
             </div>
             </div>
 

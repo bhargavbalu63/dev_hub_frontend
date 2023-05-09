@@ -1,17 +1,20 @@
 
 body
 {
-    background-color: rgb(141, 210, 248);
+    background-color: rgb(244, 194, 194);
 }
-
+.App
+{
+    width: 100%;
+}
 
 h1{
     margin-top: 40px;
  
 }
-#head
+#dhead
 {
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .dlink
@@ -29,27 +32,86 @@ h1{
 #dlinks
 {
   margin-top: 50px;
-    margin-left: 570px;
+    margin:auto;
     color: aliceblue;
     display: flex;
- 
+ justify-content: center;
 
 }
 
 .dprofile
 {
-  
+    color: white;
+    width:300px;
     border: 2px solid black;
     margin: 20px;
     border-radius: 20px;
-    background-color: rgb(242, 193, 129);
+    background-color: rgb(160, 3, 3);
 }
 #dcont
 {
+   
     display: grid;
+    width: 100vw;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 80px;
+    margin: 20px;
 
 
+}
+@media  (max-width:530px)
+{
+    #dcont{
+        display:block;
+        box-sizing: border-box;
+        width: 100vw;
+    }
+    #dlinks
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    #dhead
+{
+    font-size: 50px;
+}
+
+
+}
+
+
+@media screen and (min-width: 530px) and (max-width: 750px) {
+    #dcont
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr ;
+        width: 100vw;
+    }
+    #dlinks
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+}
+@media screen and (min-width: 750px) and (max-width: 850px) {
+    #dcont
+    {
+        display: grid;
+        width: 100vw;
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr ;
+    
+    }
+    #dlinks
+    {
+        margin-right: 20px;
+        margin:auto;
+    }
+   
 }
