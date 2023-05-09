@@ -103,10 +103,7 @@ h2{
         margin:auto;
 
     }
-.hfont
-{
-    width: 250px;
-}
+
     #hhead
     {
         display: block;
@@ -128,7 +125,7 @@ h2{
 
 .hfont
 {
-    font-size: 20px;
+    font-size: 18px;
 }
 .pfont{
     font-size: 20px;
