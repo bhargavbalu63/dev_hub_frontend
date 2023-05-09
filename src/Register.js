@@ -50,7 +50,7 @@ const Register = ()=>
 
     return (
         <div>
-            <div id="nav-bar">
+            <div id="hnav-bar">
 
 <div>
 <h1>
@@ -58,13 +58,13 @@ const Register = ()=>
 </h1>
 </div>
 
-<div id="links">
+<div id="hlinks">
 
-<div className="link">
+<div className="hlink">
        <Link  style={{"marginLeft":"5px","fontSize":"25px", "color": "white","textDecoration":"none"}} to="/register">Register</Link>
        </div>
              
-           <div className="link">
+           <div className="hlink">
            <Link  style={{"marginLeft":"5px","fontSize":"25px","color": "white", "textDecoration":"none"}} to="/login">Login</Link>
                 </div> 
 
