@@ -9,8 +9,6 @@ li{
     /* display: flex;
     justify-content: space-between; */
     padding: 0 40px;
-    background-color:rgb(244, 238, 223);
-
 
 }
 
@@ -32,7 +30,11 @@ li{
  
     margin-top: 28px;
 }
-
+.headcolor
+{
+    color: rgb(18, 18, 112);
+    font-family:cursive
+}
 #main
 {
     font-size: 60px;
@@ -47,8 +49,44 @@ p{
 h2{
     padding-top: 100px;
 }
+.navcolor
+{
+    padding: 5px;
+    font-weight:600;
+   font-family: cursive;
+}
+.hfont{
+    font-size:25px;
+    color:black;
+    font-family:monospace;
+    background-color: wheat;
+    color:rgba(37, 18, 112, 0.89); ;    
+    box-shadow: 4px 10px 24px black;
+    border-radius: 50px;
+    margin-top: 150px;
+    
+    padding: 30px;
+   width: 290px;
+   margin: auto;
 
-
+}
+.pfont
+{
+    background-color: rgba(37, 18, 112, 0.89);
+    color:wheat;
+   border-radius: 50px;
+   box-shadow: 4px 10px 24px black;
+    font-size:40px;
+     font-family:monospace;
+    padding:20px;
+    margin:15px;
+    margin-top: 100px;
+    
+}
+.hcont
+{
+    margin-top: 150px;
+}
 @media  (max-width:600px)
 {
     #pprofile{
@@ -65,10 +103,14 @@ h2{
         margin:auto;
 
     }
-
+.hfont
+{
+    width: 250px;
+}
     #hhead
     {
         display: block;
+    
     }
     #hnav-bar
     {
@@ -84,7 +126,15 @@ h2{
     font-size: 50px;
 }
 
-
+.hfont
+{
+    font-size: 20px;
+}
+.pfont{
+    font-size: 20px;
+    padding: 30px;
+    margin: 50px;
+}
 
 
 
@@ -117,6 +167,7 @@ h2{
     #hhead
     {
         display: flex;
+        margin-top: 25px;
     }
 
 }
@@ -137,6 +188,7 @@ h2{
     #hhead
     {
         display: flex;
+        margin-top: 25px;
     }
     #plinks
     {

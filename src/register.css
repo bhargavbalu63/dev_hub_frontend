@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    background-color:rgb(244, 238, 223);
+   
 
 
 }
@@ -41,7 +41,7 @@ p{
     line-height: 50px;
     margin-bottom: 20px;
     border-radius: 25px;
-    background-color: rgb(240, 118, 70);
+    background-color: rgba(37, 18, 112, 0.89);
     box-shadow: 1px 6px 15px rgb(38, 31, 12);
     border: 0  ;
 }

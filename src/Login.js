@@ -77,18 +77,18 @@ return(
 
 <div>
 <h1>
-<Link style={{"textDecoration":"none",}} to ="/"> Developers Hub</Link>
+<Link className="headcolor" style={{"textDecoration":"none",}} to ="/"> Developers Hub</Link>
 </h1>
 </div>
 
 <div id="hlinks">
 
 <div className="hlink">
-       <Link  style={{"marginLeft":"5px","fontSize":"25px", "color": "white","textDecoration":"none"}} to="/register">Register</Link>
+       <Link className="navcolor"  style={{"marginLeft":"5px","fontSize":"25px", "color": "white","textDecoration":"none"}} to="/register">Register</Link>
        </div>
              
            <div className="hlink">
-           <Link  style={{"marginLeft":"5px","fontSize":"25px","color": "white", "textDecoration":"none"}} to="/login">Login</Link>
+           <Link  className="navcolor"  style={{"marginLeft":"5px","fontSize":"25px","color": "white", "textDecoration":"none"}} to="/login">Login</Link>
                 </div> 
 
 

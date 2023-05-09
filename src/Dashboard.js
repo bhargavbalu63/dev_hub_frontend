@@ -49,15 +49,15 @@ if(!localStorage.getItem('token'))
       
       <div>
 
-<h1 id="dhead">Welcome to Developers Hub</h1>
+<h1 className="headcolor" id="dhead">Welcome to Developers Hub</h1>
  
 
  <div id="dlinks">
  <div className="dlink">
-    <li><Link  style={{"marginLeft":"5px","fontSize":"20px", "color": "white","textDecoration":"none"}} to="/myprofile">My profile</Link></li>
+    <li><Link className="navcolor" style={{"marginLeft":"5px","fontSize":"20px", "color": "white","textDecoration":"none"}} to="/myprofile">My profile</Link></li>
     </div>
     <div className="dlink">
-   <li><Link  style={{"marginLeft":"5px","fontSize":"20px", "color": "white","textDecoration":"none"}} to="/login" onClick={()=>localStorage.removeItem('token',)}>Logout</Link></li>
+   <li><Link className="navcolor" style={{"marginLeft":"5px","fontSize":"20px", "color": "white","textDecoration":"none"}} to="/login" onClick={()=>localStorage.removeItem('token',)}>Logout</Link></li>
    </div>
     </div>
   
