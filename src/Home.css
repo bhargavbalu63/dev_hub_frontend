@@ -3,7 +3,12 @@ li{
 
 }
 
-
+body{
+    
+    background-image:url('https://www.tensorflow.org/static/site-assets/images/marketing/learn/learn-lite-hero.svg');
+    background-position: center -8px;
+    background-color: aliceblue;
+}
 #hnav-bar
 {
     /* display: flex;
@@ -35,11 +40,7 @@ li{
     color: rgb(18, 18, 112);
     font-family:cursive
 }
-#main
-{
-    font-size: 60px;
-    color: white;
-}
+
 h2{
     margin-top: 0px;
 }
@@ -89,6 +90,11 @@ h2{
 }
 @media  (max-width:600px)
 {
+   
+
+
+
+
     #pprofile{
         display:block;
         box-sizing: border-box;
@@ -191,6 +197,12 @@ h2{
     {
         margin-right: 20px;
         margin:auto;
+    }
+    body{
+    
+        background-image:url('https://www.tensorflow.org/static/site-assets/images/marketing/learn/learn-lite-hero.svg');
+        background-position: center -49px;
+        background-color: aliceblue;
     }
    
 }

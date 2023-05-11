@@ -73,8 +73,8 @@ return  <div className="dprofile" key={index}>
     
 <h1>{profile.fullname}</h1> 
 <p>{profile.email}</p>
-<p>{profile.mobile}</p>
-<p>{profile.skill}</p>
+<p>phone : {profile.mobile}</p>
+<p>skill : {profile.skill}</p>
 
 </div>
 })
