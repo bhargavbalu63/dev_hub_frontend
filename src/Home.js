@@ -13,7 +13,7 @@ const Home= ()=>
 
     
            <h1  id="hhead">
-        <Link className="headcolor" style={{"textDecoration":"none","fontFamily":"cursive"}} to ="/"> Developers Hub</Link>
+        <Link className="headcolor" style={{"textDecoration":"none"}} to ="/"> Developers Hub</Link>
         </h1>
     
 

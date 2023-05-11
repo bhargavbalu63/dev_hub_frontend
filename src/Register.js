@@ -53,7 +53,7 @@ const Register = ()=>
             <div id="hnav-bar">
 
 <div>
-<h1>
+<h1  id="hhead">
 <Link className="headcolor" style={{"textDecoration":"none",}} to ="/"> Developers Hub</Link>
 </h1>
 </div>
@@ -107,7 +107,12 @@ const Register = ()=>
 
 
     Already have an account? <br/>
+
+    <div className="signlink">
     <Link to="/login">Sign in</Link>
+    </div>
+
+
     </p>
     </div>
         </div>

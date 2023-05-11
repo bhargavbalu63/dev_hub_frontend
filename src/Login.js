@@ -76,7 +76,7 @@ return(
         <div id="hnav-bar">
 
 <div>
-<h1>
+<h1  id="hhead">
 <Link className="headcolor" style={{"textDecoration":"none",}} to ="/"> Developers Hub</Link>
 </h1>
 </div>

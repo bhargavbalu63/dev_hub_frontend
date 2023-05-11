@@ -61,4 +61,15 @@ input{
 }
 #sign{
     margin-top: 0;
+    color: white;
+   text-shadow: 4px 3px 4px  rgb(0, 0, 0);
+}
+.signlink
+{
+    background-color:aliceblue;
+    width: 90px;
+    height: 30px;
+    margin: auto;
+    padding-top: 5px;
+    border-radius: 20px;
 }
